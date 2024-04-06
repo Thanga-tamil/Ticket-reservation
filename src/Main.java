@@ -24,13 +24,13 @@ class Ticket {
     }
 
     public String toString() {
-        return "Ticket for " + eventName + ", Seat Number: " + seatNumber + ", Price: $" + price;
+        return "Ticket for " + eventName + ", Seat Number: " + seatNumber + ", Price: Rs:" + price;
     }
 }
 
 class TicketReservationSystem {
     private static final int MAX_SEATS = 100;
-    private static final double TICKET_PRICE = 10.0;
+    private static final double TICKET_PRICE = 150;
     private static boolean[] seats = new boolean[MAX_SEATS]; // true means seat is booked
 
     public static void main(String[] args) {
